@@ -8,7 +8,7 @@
 
 Este es mi primer portafolio digital, creado con el objetivo de presentar un desafío en el curso inicial de Front-End, en el cual tuve la grata oportunidad de participar. Mi principal propósito es que este reto sea únicamente educativo, por lo que no incluiré mis datos personales o privados por el momento. Es ilustrativo y muestra cómo puedo desarrollar un portafolio, en este caso, con un estilo informal.
 
-##📎 Links del portafolio
+## 📎 Links del portafolio
 La mayoría de los links son simbólicos por lo cual no lleva a la información requerida como de forma habitual deberían de funcionar.
 
 ## Tecnologías utilizadas
