@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es un proyecto representativo de lo qué es un posible portafolio sobre mi.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi portafolio</title>
+</head>
+<body>
+    <header class="superior">
+        <img class="superior__logo" src="assets/TotoroLogo.png" alt="Logo A y Totoro">
+        <h1 class="superior__titulo">Nyx</h1>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__elemento"><a href="#sobreMi">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyecto">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="presentacion">
+        <img class="presentacion__foto" src="./assets/profile.png" alt="Foto de perfil">
+        <div class="presentacion__contenedor">
+            <h2 class="presentacion__titulo">Hola, mi nombre es Nyx </h2>
+            <textarea rows="10" wrap="soft" readonly aria-label="texto, sobre mi" class="presentacion__subtitulo">Este es mi portafolio digital, creado únicamente para un propósito educacional.&#13Este diseño es ilustrativo y algunos links no son funcionales hacia la información en que hacen referencia de forma completa.&#13Gracias por visitar este sitio!</textarea>
+            <ul class="redes">
+                <li class="redes__img"><a href="https://github.com/AvantNyx">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://ar.linkedin.com/">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="linksimg/EjemploCV.pdf">Currículum <img src="assets/arrow.png" alt="Flecha"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="sobreMi" id="sobreMi">
+        <h2 class="sobreMi__titulo">Sobre mí</h2>
+        <p class="sobreMi__texto" style="text-align: left;">Apasionada por la computación, siempre he encontrado en el diseño gráfico y la edición la oportunidad de expresar mi propio estilo. Soy perfeccionista por naturaleza, valoro el detalle en cada elemento y admiro el arte visual. A través del modding en los videojuegos, he descubierto otra de mis grandes aficiones: modificar y crear mundos llenos de posibilidades</p>
+        <img class="sobreMi__firma" src="assets/nyxfrm.png" alt="Firma">
+    </section>
+    <section class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento" id="elm1">
+                    <img class="habilidades__icono" src="assets/CSS.png" alt="logo CSS">
+                    <p class="habilidades__nombre">CSS</p>
+                </a>
+            </li>
+            <li class="habilidades__elemento" id="elm2">
+                    <img class="habilidades__icono" src="assets/javmg.png" alt="logo JavaScript">
+                    <p class="habilidades__nombre">JavaScript</p>
+                </a>
+            </li>
+            <li class="habilidades__elemento" id="elm3">
+                    <img class="habilidades__icono" src="assets/htmig.png" alt="logo HTML">
+                    <p class="habilidades__nombre">HTML 5</p>
+                </a>
+            </li>
+            <li class="habilidades__elemento" id="elm4">
+                    <img class="habilidades__icono" src="assets/grafico.png" alt="logo Diseño gráfico">
+                    <p class="habilidades__nombre">Diseño gráfico</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="aficiones" id="aficiones">
+        <h2 class="aficiones__titulo">Aficiones</h2>
+        <ul class="aficiones__lista">
+            <li class="aficiones__elemento">
+                <a href="linksimg/Gym.jpg"><button type="submit" id="elmGym" aria-label="gym" ><span class="aficiones__icono"></button></a>
+                <p class="aficiones_nombre">Gym</p>
+            </li>
+            <li class="aficiones__elemento">
+                <a href="linksimg/musica.jpg"><button type="submit" id="elmMusic" aria-label="música" ><span class="aficiones__icono"></button></a>
+                <p class="aficiones__nombre">Música</p>
+            </li>
+            <li class="aficiones__elemento">
+                <a href="linksimg/pc.jpg"><button type="submit" id="elmPc" aria-label="computación"><span class="aficiones__icono"></button></a>
+                <p class="aficiones__nombre">Computación</p>
+            </li>
+            <li class="aficiones__elemento">
+                <a href="https://www.youtube.com/watch?v=3AyIH6fWVx4"><button type="submit" id="elmMods" aria-label="mods"><span class="aficiones__icono"></button></a>
+                <p class="aficiones__nombre">Mods</p>
+            </li>
+            <li class="aficiones__elemento">
+                <a href="linksimg/games.jpg"><button type="submit" id="elmGames" aria-label="videojuegos"><span class="aficiones__icono"></button></a>
+                <p class="aficiones__nombre">Videojuegos</p>
+            </li>
+            <li class="aficiones__elemento">
+                <a href="linksimg/pelis.png"><button type="submit" id="elmPeli" aria-label="películas"><span class="aficiones__icono"></button></a>
+                <p class="aficiones__nombre">Películas</p>
+            </li>
+        </ul>
+    </section>
+    <section class="formacion" id="formacion">
+        <h2 class="formacion__titulo">Tipo de Formación</h2>
+        <ul class="formacion__lista">
+            <li class="formacion__elemento">
+                <img class="imgVisual" src="assets/tformacionimg.png" alt="formación">
+                <div class="formacion__descripcion">
+                    <p class="autdid">Autodidacta</p>
+                    <p class="formacion__texto">El aprendizaje autodidacta es un camino fascinante en el que se toma la iniciativa de adquirir conocimientos de manera independiente. Todos los saberes que he acumulado hasta ahora han sido fruto de mi esfuerzo personal, ya que nunca tuve la oportunidad de cursar una carrera universitaria por motivos personales. Cada nueva habilidad que adquiero es un logro, y actualmente me encuentro estudiando programación por pasión y deseo de exploración en este campo de constante evolución.</p>
+                </div>   
+            </li>     
+        </ul>
+    </section>
+    <section class="proyecto" id="proyecto">
+        <h2 class="proyecto__titulo">Proyecto</h2>
+        <h3 class="proyecto__nombre">Encriptador</h3>
+        <ul class="proyecto__lista">
+            <li class="proyecto__contenedor">
+                <img class="imgVisual" src="assets/encripdemo.png" alt="proyecto">
+                <div class="proyecto__descripcion">
+                    <p class="proyecto__texto">
+                        Este proyecto es un encriptador de texto que convierte mensajes legibles en un formato cifrado. Es un desafío propuesto por un curso en el que tuve la grata oportunidad de formar parte y como primer reto fue muy entretenido de realizar. Es mi primer paso en el aprendizaje inicial de programación, utilizando lenguajes estándar como HTML, CSS y JavaScript.
+                    </p>
+                    <a href="https://avantnyx.github.io/encriptador-nyx/" class="lkEncr"> ⮞ Mi encriptador</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="contacto" id="contacto">
+        <form class="contacto__formulario">
+            <h2 class="contacto__titulo">Contacto</h2>
+            <input class="contacto__campo" type="text" placeholder="Nombre" aria-label="Nombre">
+            <input class="contacto__campo" id="emailcampo" type="email" placeholder="Correo Electrónico" aria-label="Correo Electrónico">
+            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje" aria-label="Mensaje"></textarea>
+            <div id="msnError">
+                <p class="msnVerificar"></p>
+                <p class="msnVacio"></p>
+            </div>
+            <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+    </section>
+    </footer>
+        <p class="firma">© 2024 Portafolio · AvantNyx</p>
+    </footer>      
+</body>
+    <script src="main.js"></script>
+</html>

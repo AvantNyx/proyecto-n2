@@ -1,0 +1,614 @@
+:root{
+    --color-de-fondo: #ffbbbbc7;
+    --color-de-fondo-menu: #ffe7e7;
+    --color-de-link: #000000;
+}
+
+body{
+    background-color: var(--color-de-fondo-menu);
+}
+
+ul, li{
+    list-style: none;
+    list-style-type: none;
+}
+
+a{
+    font-family: "Roboto Mono", monospace;
+    color: #5f394b;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* -- fonts ·· margen -- */
+
+.presentacion__titulo, .sobreMi__titulo, .habilidades__titulo,
+.aficiones__titulo, .formacion__titulo, .proyecto__titulo{
+    font-family: "Martian Mono", monospace;
+}
+
+.formacion, .habilidades, .aficiones, .proyecto{
+    margin-top: 7.9rem;
+}
+
+.proyecto__texto, .formacion__texto{
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.lkEncr{
+    font-size: 13px;
+}
+
+/* --      superior y presentacion    -- */
+
+.superior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.superior__titulo, .contacto__titulo{
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+}
+.superior__logo{
+    align-self: flex-start;
+    position: absolute;
+    opacity: 0.9;
+    width: 4rem;
+    padding-left: 2rem;
+    margin: 0;
+}
+
+.sobreMi__firma{
+    display: block;
+    align-self: flex-end;
+    align-self: center;
+    margin: 2rem 1rem 0rem 7rem;
+    left: 2rem;
+    height: 3.24rem;
+}
+
+.presentacion__foto{
+    border: 12px;
+    border-color: #000000;
+}
+
+.navegacion__lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;    
+}
+
+.presentacion{
+    padding: 2rem 0 2rem 0;
+    background-color: rgb(255, 237, 219);
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse wrap;
+    justify-content: space-evenly;
+}
+
+.presentacion__subtitulo{
+    font-family: monospace;
+    width: 100%;
+    padding: 50px 0 0 0;
+	box-sizing:border-box;
+    border: 0px;
+	resize: none;
+	display: block;
+	max-width: 100%;
+    background-color: rgb(255, 237, 219);
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 17px 20px 15px;
+    gap: 4rem;
+}
+.presentacion__titulo, .sobreMi__titulo, .habilidades__titulo, .aficiones__titulo{
+    text-align: center;
+}
+
+/* --     habilidades    -- */
+
+.habilidades__lista{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: 2rem;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.habilidades__titulo{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.habilidades__elemento{
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    font-size: 13px;
+    color: #5d5352;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.habilidades__icono{
+    width: 5.6rem;
+}
+
+/* --     sobre mi    -- */
+
+.sobreMi{
+    display: flex;
+    width: 78%;
+    flex-direction: column;
+    align-items: center;
+    margin: 7rem 4rem 0rem 4rem;
+    font-family: monospace;
+    
+}
+
+/* --     aficiones    -- */
+
+
+.aficiones__lista{
+    color: rgb(46, 89, 141);
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 2rem;
+    padding: 5px;
+    margin: 0;
+}
+
+#elmGym{
+    display: block;
+    background-image: url('/proyecto-n2/assets/gymPrim.png');
+    background-repeat: no-repeat;
+    background-size: 98px;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-position: center;
+}
+#elmGym:active{
+    background-image: url('/proyecto-n2/assets/gym.png');
+}
+
+#elmMusic{
+    display: block;
+    background-image: url('/proyecto-n2/assets/musimgPrim.png');
+    background-repeat: no-repeat;
+    background-size: 98px;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-position: center;
+}
+#elmMusic:active{
+    background-image: url('/proyecto-n2/assets/musimg.png');
+}
+
+#elmPc{
+    display: block;
+    background-image: url('/proyecto-n2/assets/pcimgPrim.png');
+    background-repeat: no-repeat;
+    background-size: 98px;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-position: center;
+}
+#elmPc:active{
+    background-image: url('/proyecto-n2/assets/pcimg.png');
+}
+
+#elmMods{
+    display: block;
+    background-image: url('/proyecto-n2/assets/modsPrim.png');
+    background-repeat: no-repeat;
+    background-size: 98px;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-position: center;
+}
+#elmMods:active{
+    background-image: url('/proyecto-n2/assets/mods.png');
+}
+
+#elmGames{
+    display: block;
+    background-image: url('/proyecto-n2/assets/gamesPrim.png');
+    background-repeat: no-repeat;
+    background-size: 98px;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-position: center;
+}
+#elmGames:active{
+    background-image: url('/proyecto-n2/assets/games.png');
+}
+
+#elmPeli{
+    display: block;
+    background-image: url('/proyecto-n2/assets/editPrim.png');
+    background-repeat: no-repeat;
+    background-size: 98px;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-position: center;
+}
+#elmPeli:active{
+    background-image: url('/proyecto-n2/assets/edit.png');
+}
+
+
+
+/* --     formacion    -- */
+
+.formacion{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 7.9rem;
+    margin-right: 4rem;
+}
+.formacion__titulo{
+    margin-left: 2.5rem;
+    margin-bottom: 3rem;
+}
+.autdid{
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(65, 40, 44)
+}
+
+
+/* --     proyecto    -- */
+
+.proyecto__contenedor{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.proyecto__titulo{
+    text-align: center;
+}
+
+.proyecto__nombre{
+    padding: 1rem;
+    text-align: center;
+}
+
+.proyecto__nombre{
+    font-family: monospace;
+}
+
+.imgVisual{
+    width: 88%;
+    border: 2.8px solid rgb(249, 227, 230);
+    border-radius: 14px;
+    border-width: 9px;
+}
+
+
+.contacto{
+    margin-top: 3rem;
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+
+.contacto__boton{
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #553b49;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.56rem;
+    width: 120px;
+    transition: all 0.5s;
+    margin: 2px;
+}
+
+.contacto__formulario{
+    display: flex;
+    font-family: monospace;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contacto__campo{
+    font-family: monospace;
+    border-style: dotted;
+    border-color: #a6788035;
+    border-radius: 2px;
+    border-width: 3px;
+    width: 80%;
+    padding: 1rem;
+    align-self: flex-start;
+}
+
+.contacto__campo--textarea{
+    border-style: dotted;
+    border-color: #a6788035;
+    border-radius: 2px;
+    border-width: 3px;
+    font-family: monospace;
+    width: 90%;
+    height: 200px;
+    padding: 1rem;
+	box-sizing:border-box;
+	resize: none;
+}
+
+/*     Mensajes de verificacion   */
+
+.msnVerificar {
+    font-size: 14px;
+    font-family: Sans-serif;
+    display: block;
+    width: 14rem;
+    height: auto;
+    padding: 3px;
+    background-color: #f15555c1;
+    border: 2.8px solid rgb(118, 62, 62);
+    border-radius: 5px;
+    color: #2a2a2a;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.msnVacio {
+    font-size: 14px;
+    font-family: Sans-serif;
+    display: block;
+    width: 14rem;
+    height: auto;
+    padding: 3px;
+    background-color: #81a4f5c1;
+    border: 2.8px solid rgb(62, 90, 118);
+    border-radius: 5px;
+    color: #2a2a2a;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#msnError {
+    margin-top: 10px;
+}
+
+.msnVerificar, .msnVacio {
+    margin: 5px 0;
+    display: none;
+}
+
+.firma{
+    color: #44363b;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* ·····  RESPONSIVE  ····· */
+
+@media (min-width: 768px) {
+.habilidades__lista{
+    gap: 4rem;
+}
+
+.superior__logo{
+    width: 5.6rem;
+    margin-left: 1rem;
+}
+
+.habilidades__elemento{
+    flex-wrap: wrap;
+    background-color: rgba(239, 217, 211, 0.789);
+    list-style-position:inside;
+    border: 7px solid rgba(196, 169, 169, 0.17);
+    border-radius: 7px;
+    padding: 10px;
+    width: 12rem;
+	box-sizing:border-box;
+    text-align: center;
+    display:block;
+    text-transform: uppercase;
+}
+
+#elm1:hover {
+    transform: translate(0, -5px);
+    transition: transform 0.88s;
+    width: 10rem;
+    box-shadow: 0px 0px 0px 7px rgba(255, 112, 133, 0.246);
+    content: url('/proyecto-n2/assets/cssCont.png');
+}
+#elm2:hover{
+    transform: translate(0, -5px);
+    transition: transform 0.88s;
+    width: 10rem;
+    box-shadow: 0px 0px 0px 7px rgba(255, 112, 133, 0.246);
+    content: url('/proyecto-n2/assets/javCont.png');
+}
+#elm3:hover{
+    transform: translate(0, -5px);
+    transition: transform 0.88s;
+    width: 10rem;
+    box-shadow: 0px 0px 0px 7px rgba(255, 112, 133, 0.246);
+    content: url('/proyecto-n2/assets/htmCont.png');
+}
+#elm4:hover{
+    transform: translate(0, -5px);
+    transition: transform 0.88s;
+    width: 10rem;
+    box-shadow: 0px 0px 0px 7px rgba(255, 112, 133, 0.246);
+    content: url('/proyecto-n2/assets/designCont.png'); 
+}
+.sobreMi{
+    text-align: center;
+    width: auto;
+}
+
+.sobreMi__firma{
+    height: 4.7rem;
+    margin-left: 42rem;
+}
+
+.presentacion__foto{
+    align-self: center;
+    height: auto;
+}
+.presentacion__subtitulo{
+    width: 50rem;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+}
+
+.sobreMi__texto{
+    font-size: 20px;
+}
+
+.formacion__elemento{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+.formacion, .formacion__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyecto, .proyecto__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.proyecto__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.proyecto__descripcion, .formacion__descripcion{
+    padding: 1rem;
+    width: 650px;
+}
+.proyecto__nombre{
+    font-weight: bold;
+    font-size: 19px;
+    color: #514d4f;
+}
+
+.imgVisual{
+    width: auto;
+}
+
+
+.contacto{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto__titulo{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 1rem;
+
+}
+.contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contacto__boton{
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    width: 140px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #553b49;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    padding-left: 1.56rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.56rem;
+}
+.contacto__campo{
+    width: 400px;
+
+}
+.contacto__campo--textarea{
+    width: 650px;
+}
+
+.contacto__boton:after {
+    content: "  »";
+    opacity: 0;  
+    top: 14px;
+    transition: 0.5s;
+  }
+  
+.contacto__boton:hover{
+    padding-right: -1px;
+    transform: scale(1.2);
+    padding-left: 14px;
+}
+
+.contacto__boton:hover:after {
+    opacity: 1;
+  }
+
+}
